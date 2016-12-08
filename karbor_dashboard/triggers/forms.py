@@ -30,7 +30,6 @@ class CreateTriggerForm(horizon_forms.SelfHandlingForm):
                              widget=horizon_forms.Select(attrs={
                                  'class': 'switchable',
                                  'data-slug': 'source',
-                                 'disabled': 'disabled'
                              }))
     frequence = forms.ChoiceField(
         label=_('Frequence'),

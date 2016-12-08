@@ -15,8 +15,9 @@
 import collections
 from django.utils.translation import ugettext_lazy as _
 
-TRIGGERTYPE_CHOICES = [('time', _('Time Trigger')),
-                       ('event', _('Event Trigger'))]
+#TRIGGERTYPE_CHOICES = [('time', _('Time Trigger')),
+#                       ('event', _('Event Trigger'))]
+TRIGGERTYPE_CHOICES = [('time', _('Time Trigger'))]
 
 CRONTAB = 'crontab'
 

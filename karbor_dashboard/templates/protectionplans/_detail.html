@@ -2,6 +2,13 @@
 {% load static %}
 {% load compress %}
 
+{% block js %}
+  {% compress js %}
+    <script src="{% static 'karbordashboard/js/jquery.treetable.js' %}"></script>
+    <script src="{% static 'karbordashboard/js/protectionplans.detail.js' %}"></script>
+  {% endcompress %}
+{% endblock %}
+
 {% block css %}
   {% compress css %}
     <link rel="stylesheet" href="{% static 'karbordashboard/css/jquery.treetable.css' %}">
